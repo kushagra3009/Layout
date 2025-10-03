@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breaking Bad — The Movie</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        position: relative;
+        max-width: 900px;
+      }
+      .card {
+        max-width: 280px;
+        padding: 15px;
+        border: 5px solid black;
+        background: #7fd3ce;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+      }
+      .card.red {
+        background: #d96b6b;
+        margin-top: 140px;
+      }
+      .poster {
+        width: 220px;
+        border: 5px solid black;
+        position: absolute;
+        top: 140px;
+        left: 330px;
+        z-index: 2;
+      }
+      @media (max-width: 700px) {
+        .poster {
+          position: static;
+          margin: 20px auto;
+          display: block;
+        }
+        .card.red {
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h3>About the Series</h3>
+        <p>
+          A chemistry teacher diagnosed with inoperable lung cancer turns to
+          manufacturing and selling methamphetamine with a former student to
+          secure his family's future.
+        </p>
+      </div>
+
+      <img class="poster" src="bb3.jpg" alt="Breaking Bad Poster" />
+
+      <div class="card red">
+        <h3>Synopsis</h3>
+        <p>
+          Set in the aftermath of the TV series, the film follows Walter White
+          as he navigates the challenges of his new life. With his family in
+          danger and his past catching up to him, Walter must make difficult
+          choices to protect those he loves while confronting old enemies.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
